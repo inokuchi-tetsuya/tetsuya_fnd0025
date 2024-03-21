@@ -2,9 +2,8 @@
 
 body {
     background-color: rgb(222, 222, 240);
-    /* background: url('food_pizza_cut_meat.png') repeat; 
-    background-size: 50px; 
-    background-position: center; 背景画像の位置を中央に設定 */
+    width: 100%;
+    height: 800px;
 }
 
 .current-container {
@@ -23,10 +22,6 @@ body {
 .container {
     display: flex;
 }
-
-/* .container img {
-    margin-right: 50px;
-} */
 
 
 .dietManArea {
@@ -54,10 +49,90 @@ body {
 }
 
 h2 input[type="text"] {
-    font-size: 20px; /* 任意の大きさに調整 */
+    font-size: 30px; /* 任意の大きさに調整 */
   }
   
   button {
     font-size: 20px; /* ボタンの文字を大きくする場合 */
   }
+
+
+.input-with-unit-goal {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+}
+
+#targetWeight {
+    width: 150px;
+}
+
+.unit {
+margin-left: 5px; /* テキストフィールドと単位表示の間隔を設定 */
+}
+
+.input-with-unit-current {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+}
+#currentWeight {
+    width: 150px;
+}
+.title-container {
+    text-align: center; /* テキストを中央揃えにする */
+    font-family: 'Arial'; /* フォントを指定する */
+  }
+  
+  #main-title {
+    color: #ff6347; /* テキストの色をオレンジ色にする */
+    font-size: 36px; /* フォントサイズを大きくする */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* テキストに影を付ける */
+  }
+
+
+  .button {
+    background-color: #4CAF50; /* ボタンの背景色を緑に設定 */
+    color: rgb(255, 255, 255); /* ボタンのテキスト色を白に設定 */
+    padding: 15px 25px; ボタンのパディングを設定
+    font-size: 26px; /* ボタンのフォントサイズを設定 */
+    border: none; /* ボタンの枠線を削除 */
+    border-radius: 5px; /* ボタンの角を丸くする */
+    cursor: pointer; /* カーソルをポインターにする */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* テキストに影を付ける */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* ボタンに影を付ける */
+  }
+  
+  /* ボタンにマウスが乗ったときのスタイル */
+  .button:hover {
+    background-color: #45a049; /* ボタンの背景色を濃い緑に変更 */
+  }
+
+
+  .explanation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 50%; /* 列の幅を設定 */
+    /* width: 100px; */
+}
+
+header {
+    background-color: #2eee1d;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 
