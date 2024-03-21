@@ -2,11 +2,16 @@
 <html>
 <head>
     <title>ダイエット応援アプリ</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" type="text/css" href="homework.css">
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "homework.css">
 </head>
 <body>
-    <div><h1>Let's　ダイエット！！</h1></div>
+    <header>
+        <p>Welcome to our website!</p>
+    </header>
+    <div class="title-container">
+        <h1 id = "main-title">Let's enjoy ダイエット！！</h1>
+    </div>
     <div class = "container">
         <div class = "dietManArea">
             <img id = "dietMan" src = "diet_before_man.png">
@@ -15,27 +20,118 @@
             <img id = "gamanOkashi" src = "gaman_okashi_man.png">
         </div>
     </div>
+    <div class="input-with-unit-goal">
+        <h2>目標の体重　<input type = "text" id = "targetWeight"  placeholder = "体重（kg）" value = "60"></h2>
+        <span class="unit">kg</span>
+    </div>
+    <div class="input-with-unit-current">
+        <h2>現在の体重　<input type = "text" id = "currentWeight" placeholder = "体重（kg）" value = "67"></h2>
+        <span class="unit">kg</span>
+    </div>
+    
+    <button id="camPowerOn" class="button">カメラ起動・再起動</button>
+    <button id="capture" class="button">写真を取る</button>
 
-    <h2>目標の体重　<input type="text" id="targetWeight"  placeholder="体重（kg）" value = "60"></h2>
-    <h2>現在の体重　<input type="text" id="currentWeight" placeholder="体重（kg）" value = "67"></h2>
-    <button id="camPowerOn">カメラ起動</button>
-    <button id="capture">写真を取る</button>
-    <div class="current-container">
+    <div class = "current-container">
         <h2>現在の私</h2>
         <h2>未来の私</h2>
     </div>
 
-    <div id="photoContainer">
-        <video  id="video"   width="320" height="240" autoplay></video>
-        <canvas id="canvas"  width="320" height="240">         </canvas>
+    <div id = "photoContainer">
+        <video  id = "video"   width="320" height="240" autoplay></video>
+        <canvas id = "canvas"  width="320" height="240">         </canvas>
     </div>
-
-    <canvas id="myChart" width="400" height="400"></canvas>
 
     <script type="text/javascript" src="homework_script.js"></script>
     <script type="text/javascript" src="picture_fade_out_in.js"></script>
 
-
+    <div class = "explanation">
+        <div class = "column" id = "layout_style">
+            <h3>レイアウト・スタイル</h3>
+            <li>配置　縦・横並び flex margin </li>
+            <li>文字装飾（特にボタン）</li>
+            <li>ボタン　カーソルポインター</li>
+            <li>文字入力部　placeholderや初期値</li>
+        </div>
+        <div class = "column" id = "functionality">
+            <h3>機能</h3>
+            <li>カメラ・スピーカー　停止や再開</li>
+            <li>文字入力 入力値の演算</li>
+            <li>写真撮るボタン使用できない時はBoo音</li>
+            
+        </div>
+        <div class = "column" id = "technique">
+            <h3>技術</h3>
+            <li>console.log,if,for,配列,オブジェクト</li>
+            <li>クロージャ　音源の使い分け</li>
+            <li>メソッド　ドット記法・ブラケット記法</li>
+            <li>DOMイベント（click,mouseover)</li>
+            <li>JSライブラリ利用</li>
+            <li>高階関数 setInterval</li>
+            <li>アロー関数</li>
+            <li>副作用　太・痩せアニメーション</li>
+            <li>カメラ画像のLIVE画像、静止画</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2024.3.21 tetsuya inokuchi Website</p>
+    </footer>
 </body>
 </html>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ダイエット応援アプリ</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>目標体重　<input type="text" id="currentWeight" placeholder="体重（kg）">
+    　　現在の体重　<input type="text" id="currentWeight" placeholder="体重（kg）"></h2>
+    <button id="capture">写真を取る</button>
+    <h2>現在の私</h2>
+    <video id="video" width="320" height="240" autoplay></video>
+    <h2>未来の私</h2>
+    <div><canvas id="canvas" width="320" height="240"></canvas></div>
+
+    <script type="text/javascript" src="homework_script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>ダイエット応援アプリ</title>
+</head>
+<body>
+    <button id="capture">写真を取る</button>
+    <h2>現在の私</h2>
+    <video id="video" width="320" height="240" autoplay></video>
+    <h2>未来の私</h2>
+    <div><canvas id="canvas" width="320" height="240"></canvas></div>
+
+    <script type="text/javascript" src="homework_script.js"></script>
+</body>
+</html> -->
